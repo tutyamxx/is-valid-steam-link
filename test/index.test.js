@@ -1,20 +1,4 @@
-# is-valid-steam-link
-
-<p align="center"><a href="https://nodei.co/npm/is-valid-steam-link/"><img src="https://nodei.co/npm/is-valid-steam-link.png"></a></a></p>
-
-* Simple NPM package that Checks if the url provided is a valid λ Steam url/link
-
-# Install via [NPM](https://www.npmjs.com/package/is-valid-steam-link)
-
-`$ npm i is-valid-steam-link`
-
-# Usage
-
-- Returns a `Boolean` indicating whether the string is a valid λ Steam url/link
-- It will return `false` if the parameter is empty or not a string.
-
-```javascript
-const isValidSteamLink = require('is-valid-steam-link');
+const isValidSteamLink = require('../index.js');
 
 const validSteamLink = [
     'https://steamcommunity.com/market/',
@@ -34,21 +18,21 @@ const validSteamLink = [
     'steamcommunity.com/id/tutyakafutux/'
 ];
 
-// --| All will return true
-validSteamLink.forEach((url) => {
-    console.log(isValidSteamLink(url));
-});
-
 const invalidSteamLink = [
     'www.github.com',
     'www.youtube.com',
     'www.discord.gg',
     'https://discordapp.com/api/oauth2/authorize?client_id=412067927333011470&permissions=8&scope=bot',
     'https://www.npmjs.com/package/is-discord-invite'
-];
+]
 
-// --| All will return false
-invalidSteamLink.forEach((url) => {
-    console.log(isValidSteamLink(url));
+test('Check for valid Steam urls/links', () => validSteamLink.forEach((url) => expect(isValidSteamLink(url)).toBe(true)));
+test('Check for invalid Steam urls/links', () => invalidSteamLink.forEach((url) => expect(isValidSteamLink(url)).toBe(false)));
+test('Should return false if not a string', () => {
+    expect(isValidSteamLink(12345)).toBe(false);
+    expect(isValidSteamLink([12345])).toBe(false);
+    expect(isValidSteamLink({})).toBe(false);
+    expect(isValidSteamLink([[1], [2]])).toBe(false);
+    expect(isValidSteamLink(Infinity)).toBe(false);
 });
-```
+test('Should return false if parameter is empty', () => expect(isValidSteamLink()).toBe(false));

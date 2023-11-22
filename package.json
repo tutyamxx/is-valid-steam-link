@@ -1,0 +1,20 @@
+{
+  "name": "is-valid-steam-link",
+  "version": "1.0.0",
+  "description": "Checks if the url provided is a valid Steam url",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "tuty",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tutyamxx/is-valid-steam-link"
+  },
+  "homepage": "https://github.com/tutyamxx/is-valid-steam-link",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
