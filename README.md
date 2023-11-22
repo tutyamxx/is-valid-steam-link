@@ -3,6 +3,7 @@
 <p align="center"><a href="https://nodei.co/npm/is-valid-steam-link/"><img src="https://nodei.co/npm/is-valid-steam-link.png"></a></a></p>
 
 * Simple NPM package that Checks if the url provided is a valid λ Steam url/link
+* This package WILL NOT VALIDATE STEAM ID/PROFILE ID! Just checks if it is a valid λ Steam url/link
 
 # Install via [NPM](https://www.npmjs.com/package/is-valid-steam-link)
 

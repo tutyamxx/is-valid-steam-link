@@ -1,6 +1,6 @@
 /**
- *  is-valid-steam-link - Checks if the url provided is a valid Steam url
- *  @version: v1.0.0
+ *  is-valid-steam-link - Checks if the url provided is a valid λ Steam url/link
+ *  @version: v1.0.1
  *  @link: https://github.com/tutyamxx/is-valid-steam-link
  *  @license: MIT
  **/

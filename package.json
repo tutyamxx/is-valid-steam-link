@@ -1,6 +1,6 @@
 {
   "name": "is-valid-steam-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks if the url provided is a valid Steam url",
   "main": "index.js",
   "scripts": {
