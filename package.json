@@ -1,8 +1,15 @@
 {
   "name": "is-valid-steam-link",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Checks if the url provided is a valid Steam url",
   "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+      "require": "./index.js",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+  },
   "scripts": {
     "test": "jest --verbose"
   },
