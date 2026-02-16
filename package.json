@@ -1,6 +1,6 @@
 {
   "name": "is-valid-steam-link",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Checks if the url provided is a valid Steam url",
   "main": "index.js",
   "module": "index.js",
@@ -17,10 +17,14 @@
     "is-valid-steam-link",
     "steam-link",
     "steam-domain-valid",
-    "steam-valid-link"
+    "steam-valid-link",
+    "steam",
+    "string-check",
+    "url",
+    "steam-url"
   ],
   "author": "tuty",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tutyamxx/is-valid-steam-link"

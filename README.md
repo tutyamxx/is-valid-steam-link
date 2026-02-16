@@ -1,6 +1,9 @@
 # is-valid-steam-link
 
 <p align="center"><a href="https://nodei.co/npm/is-valid-steam-link/"><img src="https://nodei.co/npm/is-valid-steam-link.png"></a></a></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
 
 * Simple NPM package that Checks if the url provided is a valid λ Steam url/link
 * This package WILL NOT VALIDATE STEAM ID/PROFILE ID! Just checks if it is a valid λ Steam url/link
