@@ -15,7 +15,11 @@ const validSteamLink = [
     'http://steamcommunity.com/profiles/76561198009610232/',
     'http://steamcommunity.com/id/tutyakafutux/',
     'http://help.steampowered.com/en/',
-    'steamcommunity.com/id/tutyakafutux/'
+    'steamcommunity.com/id/tutyakafutux/',
+    'https://s.team/p/cgmc-vgbp',
+    'http://s.team/p/qwr-nmty',
+    's.team/a/123456',
+    'S.TEAM/P/ABC-DEFG'
 ];
 
 const invalidSteamLink = [
@@ -23,7 +27,8 @@ const invalidSteamLink = [
     'www.youtube.com',
     'www.discord.gg',
     'https://discordapp.com/api/oauth2/authorize?client_id=412067927333011470&permissions=8&scope=bot',
-    'https://www.npmjs.com/package/is-discord-invite'
+    'https://www.npmjs.com/package/is-discord-invite',
+    'https://not-really-s.team/p/123'
 ]
 
 test('Check for valid Steam urls/links', () => validSteamLink.forEach((url) => expect(isValidSteamLink(url)).toBe(true)));

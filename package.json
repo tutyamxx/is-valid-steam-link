@@ -1,14 +1,14 @@
 {
   "name": "is-valid-steam-link",
-  "version": "1.0.9",
-  "description": "Checks if the url provided is a valid Steam url",
+  "version": "1.1.0",
+  "description": "λ Checks if the url provided is a valid Steam url",
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",
   "exports": {
-      "require": "./index.js",
-      "import": "./index.js",
-      "types": "./index.d.ts"
+    "require": "./index.js",
+    "import": "./index.js",
+    "types": "./index.d.ts"
   },
   "scripts": {
     "test": "jest --verbose"
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/tutyamxx/is-valid-steam-link",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^30.3.0"
   }
 }

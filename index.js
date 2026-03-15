@@ -1,6 +1,6 @@
 /**
- *  is-valid-steam-link - Checks if the url provided is a valid λ Steam url/link
- *  @version: v1.0.9
+ *  is-valid-steam-link - λ Checks if the url provided is a valid λ Steam url/link
+ *  @version: v1.1.0
  *  @link: https://github.com/tutyamxx/is-valid-steam-link
  *  @license: MIT
  **/
@@ -23,7 +23,7 @@ const isValidSteamLink = (url) => {
         return false;
     }
 
-    const steamValidUrlPattern = /^(https?:\/\/)?(?:\w+\.)?(steamcommunity\.com|store\.steampowered\.com|help\.steampowered\.com)\/.*$/;
+    const steamValidUrlPattern = /^(https?:\/\/)?(?:[a-z0-9-]+\.)?(steamcommunity\.com|steampowered\.com|s\.team)(\/.*)?$/i;
 
     if (url.match(steamValidUrlPattern)) {
         return true;
